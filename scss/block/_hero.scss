@@ -6,7 +6,7 @@ body {
 .openbar {
   background: rgba(255, 255, 255, 0.33);
   width: 100%;
-  height: 100%;
+height: 100%;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -15,7 +15,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   display: none;
-
+padding-top: 10px;
   .bar {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     background: linear-gradient(to right, #006600 40%, #ff0000 40%);
@@ -51,6 +51,8 @@ body {
       border: none;
       padding: 10px;
       width: 100%;
+      border-bottom: 1px solid #fff;
+      outline: none;
     }
 
     button {
