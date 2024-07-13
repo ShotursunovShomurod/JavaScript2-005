@@ -40,7 +40,7 @@ padding-top: 10px;
 
     p {
       color: #fff;
-      font-size: 18px;
+      font-size: 13px;
       font-weight: 700;
     }
 
@@ -56,7 +56,8 @@ padding-top: 10px;
     }
 
     button {
-      width: 200px;
+      width: 100px;
+      padding: 2px;
       margin: auto;
       background: linear-gradient(to right, #006600 40%, #ff0000 40%);
       padding: 5px;
@@ -170,8 +171,9 @@ padding-top: 10px;
 
   @media (max-width: 500px) {
     .openbar {
+      width: 100%;
       .bar {
-        width: 80%;
+        width: 90%;
       }
     }
   }
