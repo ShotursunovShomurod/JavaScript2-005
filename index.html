@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="icon" href="./assets/image.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Table</title>
+  </head>
+  <body>
+      <form class="form" action="">
+        <div class="openbar">
+          <div class="bar">
+            <div class="back">
+              <p>Ismingiz ?</p>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <input
+              class="name"
+              required
+              placeholder="Ismingizni kiriting"
+              type="text"
+            />
+            <p>Familiangiz ?</p>
+            <input
+              class="lastname"
+              required
+              placeholder="Familiangizni kiriting"
+              type="text"
+            />
+            <p>username kiriting</p>
+            <input
+              class="username"
+              required
+              placeholder="username kiriting"
+              type="text"
+            />
+            <p>Yoshingizni kiriting</p>
+            <input
+              class="age"
+              required
+              placeholder="Yoshingiz nechchi ?"
+              type="text"
+            />
+            <button class="qoshish" type="submit">Qo'shilish</button>
+          </div>
+        </div>
+      </form>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <button class="plus">+</button>
+            <div class="hero__table">
+              <table class="table">
+                <thead>
+                  <tr class="">
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                    <th>Age</th>
+                    <th>ID</th>
+                    <th>Iles Daraja</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="tr">
+                    <td data-call="name">Cristiano</td>
+                    <td data-call="lastname">Ronaldo</td>
+                    <td data-call="username">cristiano</td>
+                    <td class="age">39</td>
+                    <td class="id" data-call="id">44582</td>
+                    <td data-call="ilesScore">9</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <select class="score" name="" id="">
+          <option value="0.5">0.5</option>
+          <option value="1">1</option>
+          <option value="1.5">1.5</option>
+          <option value="2">2</option>
+          <option value="2.5">2.5</option>
+          <option value="3">3</option>
+          <option value="3.5">3.5</option>
+          <option value="4">4</option>
+          <option value="4.5">4.5</option>
+          <option value="5">5</option>
+          <option value="5.5">5.5</option>
+          <option value="6">6</option>
+          <option value="6.5">6.5</option>
+          <option value="7">7</option>
+          <option value="7.5">7.5</option>
+          <option value="8">8</option>
+          <option value="8.5">8.5</option>
+          <option value="9">9</option>
+        </select>
+      </section>
+    </main>
+    <script src="./js/main.js"></script>
+    <script src="./js/masalalar.js"></script>
+  </body>
+</html>
