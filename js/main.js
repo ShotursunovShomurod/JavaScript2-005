@@ -11,7 +11,7 @@ const tableBody = document.querySelector("table tbody");
 const scoreSelect = document.querySelector(".score");
 
 let rowCount = 0;
-const maxRows = 30;
+const maxRows = 300;
 
 // Sayt yuklanganida localStorage-dan ma'lumotlarni o'qish
 document.addEventListener("DOMContentLoaded", () => {
@@ -80,7 +80,6 @@ qoshishButton.addEventListener("click", (event) => {
 
     addRowToTable(name, lastname, username, age, randomId, randomOption);
 
-    // LocalStorage-ga ma'lumotlarni saqlash
     const tableData = JSON.parse(localStorage.getItem("tableData")) || [];
     tableData.push({ name, lastname, username, age, id: randomId, ilesScore: randomOption });
     localStorage.setItem("tableData", JSON.stringify(tableData));
