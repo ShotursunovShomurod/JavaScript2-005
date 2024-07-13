@@ -20,7 +20,8 @@ body {
   .bar {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
       rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-      background: linear-gradient(to right, #00bfff 50%, #ff6347 50%);
+      // background: linear-gradient(to right, #00bfff 50%, #ff6347 50%);
+      background: #000;
     border-radius: 20px;
     padding: 20px;
     width: 50%;
@@ -34,7 +35,8 @@ body {
       justify-content: space-between;
 
       i {
-        color: #006600;
+        // color: #006600;
+        color: #ff0000;
         font-size: 22px;
         cursor: pointer;
       }
@@ -61,7 +63,8 @@ body {
     button {
       width: 100px;
       margin: auto;
-      background: linear-gradient(to right, #ad4040 50%, #FF5454 50%);
+      // background: linear-gradient(to right, #ad4040 50%, #FF5454 50%);
+      background: #000;
       padding: 5px;
       color: #fff;
       font-size: 18px;
