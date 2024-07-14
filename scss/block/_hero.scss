@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to right, #006600 40%, #ff0000 40%);
+  background: #333;
 }
 
 .openbar {
@@ -15,6 +15,7 @@ body {
   align-items: flex-start;
   display: none;
   // padding-top: 10px;
+  animation: fadeShow 0.5s forwards;
 
   .bar {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
@@ -28,6 +29,11 @@ body {
     flex-direction: column;
     gap: 10px;
     justify-content: center;
+    // opacity: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    
 
     .back {
       display: flex;
@@ -94,7 +100,7 @@ body {
       sans-serif;
     line-height: 1.5;
     height: 100%;
-    background: linear-gradient(to right, #006600 40%, #ff0000 40%);
+    background: #333;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,12 +129,18 @@ body {
 
       .hero__table {
         width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, .2);
 
         table {
           width: 100%;
           border-radius: 20px;
           border-collapse: collapse;
           background: #323232;
+          border: no;
+          
+          
 
           th {
             text-align: left;
@@ -138,9 +150,19 @@ body {
           }
 
           td {
-            color: #979797;
+            color: #fff;
             text-align: left;
             padding: 1rem;
+            background: #000;
+            
+          }
+
+          tr {
+            border-bottom: 1px solid #fff;
+          }
+
+          tr:last-child {
+            border-bottom: none;
           }
 
           tr:nth-child(even) {
@@ -184,5 +206,13 @@ body {
         width: 90%;
       }
     }
+  }
+}
+
+@keyframes fadeShow {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
   }
 }

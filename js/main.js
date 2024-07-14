@@ -29,12 +29,12 @@ function addRowToTable(name, lastname, username, age, id, ilesScore) {
     newRow.classList.add("tr");
 
     newRow.innerHTML = `
-        <td data-call="name">${name}</td>
-        <td data-call="lastname">${lastname}</td>
-        <td data-call="username">${username}</td>
-        <td data-call="age">${age}</td>
-        <td class="id" data-call="id">${id}</td>
-        <td data-call="ilesScore">${ilesScore}</td>
+        <td contenteditable="true" data-call="name">${name}</td>
+        <td contenteditable="true" data-call="lastname">${lastname}</td>
+        <td contenteditable="true" data-call="username">${username}</td>
+        <td contenteditable="true" data-call="age">${age}</td>
+        <td contenteditable="true" class="id" data-call="id">${id}</td>
+        <td contenteditable="true" data-call="ilesScore">${ilesScore}</td>
     `;
 
     tableBody.appendChild(newRow);
